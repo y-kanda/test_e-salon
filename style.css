@@ -1,0 +1,339 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #681216;
+}
+
+section {
+  font-weight: 700;
+}
+
+.pv_img_logo {
+  display: none;
+}
+
+.fitting_wrapper {
+  background-color: #f5f0e7;
+}
+
+.about_wrapper {
+  background-color: #d0c5b0;
+}
+
+.salon_head {
+  color: #d0c5b0;
+  width: 820px;
+  height: 400px;
+  padding: 40px 0 20px;
+  margin: 0 auto;
+  background-color: #681216;
+  -webkit-clip-path: polygon(30% 0%, 45% -20%, 100% 25%, 105% 65%, 70% 100%, 30% 100%, 0% 70%, 0% 25%);
+          clip-path: polygon(30% 0%, 45% -20%, 100% 25%, 105% 65%, 70% 100%, 30% 100%, 0% 70%, 0% 25%);
+  overflow: hidden;
+}
+
+@media all and (max-width: 767px) {
+  img {
+    width: 100%;
+  }
+  .downroad_img {
+    width: 12px;
+    height: 14px;
+    margin-left: 7px;
+  }
+  .pv_text {
+    background-color: #681216;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    padding: 10px;
+    font-weight: 700;
+  }
+  .pv_text_heading {
+    font-size: 22px;
+  }
+  .pv_text_p {
+    font-size: 12px;
+  }
+  .pv_text_p a {
+    border-bottom: solid #fff 1px;
+  }
+  .pv_img {
+    position: relative;
+  }
+  .pv_img .pv_img_logo {
+    position: absolute;
+    width: 32%;
+    top: 20px;
+    left: 20px;
+  }
+  .button {
+    text-align: center;
+    margin: 50px;
+  }
+  .app_download {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    background: #38d0dd;
+    color: #fff;
+    border: none;
+    line-height: 22px;
+    padding: 15px;
+    border-radius: 40px;
+  }
+  .app_download span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .nav {
+    display: none;
+  }
+  .salon_head {
+    width: 100%;
+    padding: 40px 0 0px;
+    margin: 140px auto;
+    position: relative;
+  }
+  .salon_head .head_p1, .salon_head .head_mainUnder_p1 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .salon_head .head_p2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: -40px;
+  }
+  .salon_head .head_main {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    margin-bottom: -90px;
+  }
+  .salon_head .head_mainUnder_p2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .octogun {
+    background-color: #d0c5b0;
+    height: 7px;
+  }
+  .octogun1 {
+    transform-origin: -10%;
+    transform: rotate(-35deg);
+  }
+  .octogun2 {
+    transform-origin: 0%;
+    transform: rotate(40deg);
+  }
+  .salon_text_head {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .salon_text_content1, .salon_text_content2 {
+    font-size: 14px;
+    line-height: 31px;
+  }
+  .fitting_circle {
+    display: inline-block;
+    background-color: #f5f0e7;
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+    top: 8vh;
+    z-index: -1;
+  }
+  .fitting_wrapper {
+    background-color: #f5f0e7;
+    padding: 10px 0 100px 0;
+  }
+  .fitting_wrapper .fitting_head {
+    font-size: 22px;
+    line-height: 40px;
+    margin: 40px auto;
+  }
+  .fitting_wrapper .fitting_fukidasi {
+    margin-bottom: 30px;
+  }
+  .fitting_wrapper .fitting_fukidasi .fukidasi_text {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #681216;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 48px;
+    border-radius: 60px;
+    text-align: start;
+  }
+  .fitting_wrapper .fukidasi_textSet {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+  }
+  .fitting_wrapper .fukidasi_textSet img {
+    margin-top: -10px;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+  }
+  .fitting_wrapper .fukidasi_img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .fitting_wrapper .fitting_under_wrap {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  .about {
+    background-color: #f5f0e7;
+  }
+  .about_circle {
+    display: inline-block;
+    background-color: #d0c5b0;
+    position: relative;
+    top: 8vh;
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .about_wrapper {
+    background-color: #d0c5b0;
+    padding: 50px 0 130px 0;
+  }
+  .about_wrapper .section_ttl {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .about_wrapper .ttl_text {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+  .about_wrapper .about_head {
+    width: 78%;
+    font-size: 22px;
+    line-height: 40px;
+    margin: 60px auto;
+    border-bottom: 2px solid #681216;
+  }
+  .about_wrapper .about_p {
+    font-size: 14px;
+    line-height: 31px;
+    text-align: start;
+    padding: 0 30px;
+  }
+  .about_wrapper .contents_img {
+    padding-bottom: 30px;
+  }
+  .about_wrapper .content_img_wrap {
+    margin-bottom: 10px;
+  }
+  .about_wrapper .contents_text {
+    font-size: 14px;
+  }
+  .about_wrapper .about_under {
+    width: 68%;
+    margin: 0 auto;
+    letter-spacing: 3.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #681216;
+    padding-bottom: 3px;
+  }
+  .about_wrapper .about_under .about_point {
+    width: 7.5%;
+    margin-right: 3px;
+    margin-bottom: 3px;
+  }
+  .how_to_circle {
+    display: inline-block;
+    background-color: #ffffff;
+    position: relative;
+    top: -4vh;
+    text-align: center;
+    width: 130px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .how_to_wrapper {
+    padding-bottom: 130px;
+  }
+  .how_to_wrapper .section_ttl {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .how_to_wrapper .how_to_head_p {
+    font-size: 22px;
+  }
+  .how_to_wrapper .how_to_img_content {
+    width: 70%;
+    margin: 60px auto;
+  }
+  .how_to_wrapper .how_to_img_content .how_to_img_heading {
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    color: #d0c5b0;
+    font-weight: 400;
+  }
+  .how_to_wrapper .how_to_img_content .how_to_contents_text {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .how_to_wrapper .how_to_img_content .how_to_contents_head {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .how_to_wrapper .how_to_img_content .how_to_contens_p {
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 5px;
+  }
+  .how_to_wrapper .how_to_img_content .button, .how_to_wrapper .how_to_img_content .how_to_downroad_wrap {
+    margin: 10px 40px 40px;
+  }
+  .how_to_wrapper .how_to_img_content .how_to_downroad {
+    background-color: #dd5038;
+    font-size: 14px;
+  }
+  .how_to_styling_wrap {
+    width: 85%;
+    padding: 0 20px;
+    margin: 0 auto;
+    border: #681216 solid 1px;
+  }
+  .how_to_styling_wrap .styling_h1 {
+    line-height: 40px;
+  }
+  .how_to_styling_wrap .styling_head_p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 10px;
+  }
+  .how_to_styling_wrap .styling_inner_text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: start;
+  }
+  .how_to_styling_wrap .styling_inner_button {
+    margin: 10px auto 30px;
+  }
+  .how_to_styling_wrap .styling_button {
+    background-color: #dd5038;
+    width: 60%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
