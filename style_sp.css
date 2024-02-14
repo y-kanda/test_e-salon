@@ -1,19 +1,22 @@
 @charset "UTF-8";
+html {
+  overflow: auto;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #681216;
+  width: 100vw;
+  overflow: hidden;
 }
 
 section {
   font-weight: 700;
 }
 
-.sp_only {
-  display: none;
-}
-
-.pv_img_logo {
+.pv_img_logo,
+.pv_img_base {
   display: none;
 }
 
@@ -38,8 +41,15 @@ section {
 }
 
 @media all and (max-width: 767px) {
+  body {
+    max-width: 100%;
+    overflow: hidden;
+  }
   img {
     width: 100%;
+  }
+  .pc_only {
+    display: none;
   }
   .downroad_img {
     width: 12px;
@@ -57,6 +67,9 @@ section {
   .pv_text_heading {
     font-size: 22px;
   }
+  .pv_text_heading .sp_only {
+    display: inline;
+  }
   .pv_text_p {
     font-size: 12px;
   }
@@ -64,7 +77,19 @@ section {
     border-bottom: solid #fff 1px;
   }
   .pv_img {
+    width: 100%;
     position: relative;
+    overflow-x: hidden;
+  }
+  .pv_img .pv_pcImg {
+    display: none;
+    width: 0%;
+    overflow: hidden;
+  }
+  .pv_img .pv_img_base {
+    display: inline;
+    width: 100%;
+    overflow: hidden;
   }
   .pv_img .pv_img_logo {
     display: block;
@@ -72,6 +97,9 @@ section {
     width: 32%;
     top: 20px;
     left: 20px;
+  }
+  .pv_img .pv_img_inner {
+    display: none;
   }
   .button {
     text-align: center;
@@ -145,23 +173,29 @@ section {
     background-color: #707070;
     z-index: 2;
   }
-  .backimg {
+  .sp_backimg {
     -webkit-mask-image: url("img/logo_e_salon01.svg");
-            mask-image: url("img/logo_e_salon01.svg");
+    mask-image: url("img/logo_e_salon01.svg");
     -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     -webkit-mask-position: center center;
-            mask-position: center center;
+    mask-position: center center;
     -webkit-mask-size: contain;
-            mask-size: contain;
+    mask-size: contain;
     width: 330px;
     height: 100px;
     background-color: #ffffff;
     margin: 0 auto;
   }
-  .backimg.nav_logo {
+  .sp_backimg.sp_nav_logo {
     width: 200px;
     height: 110px;
+  }
+  .nav_pc_Instagram {
+    display: none;
+  }
+  .nav_sp_Instagram {
+    display: contents;
   }
   .nav_ul {
     display: block;
@@ -214,6 +248,9 @@ section {
     font-size: 12px;
     line-height: 16px;
   }
+  .nav .pc_button_wrap .pc_button {
+    display: none;
+  }
   .salon_head {
     width: 100%;
     height: 390px;
@@ -221,7 +258,8 @@ section {
     margin: 90px auto 0;
     position: relative;
   }
-  .salon_head .head_p1, .salon_head .head_mainUnder_p1 {
+  .salon_head .head_p1,
+  .salon_head .head_mainUnder_p1 {
     font-size: 14px;
     font-weight: 700;
   }
@@ -276,9 +314,13 @@ section {
     font-size: 22px;
     line-height: 40px;
   }
-  .salon_text_content1, .salon_text_content2 {
+  .salon_text_content1,
+  .salon_text_content2 {
     font-size: 14px;
     line-height: 31px;
+  }
+  .sp_only {
+    display: inline;
   }
   .fitting_circle {
     display: inline-block;
@@ -370,6 +412,9 @@ section {
     margin: 60px auto;
     border-bottom: 2px solid #681216;
   }
+  .about_wrapper .swiper-wrapper {
+    display: block;
+  }
   .about_wrapper .about_p {
     font-size: 14px;
     line-height: 31px;
@@ -388,17 +433,26 @@ section {
   .about_wrapper .about_under {
     width: 68%;
     margin: 0 auto;
-    letter-spacing: 3.8px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid #681216;
     padding-bottom: 3px;
   }
+  .about_wrapper .about_under .about_under_inner {
+    display: flex;
+    justify-content: center;
+  }
   .about_wrapper .about_under .about_point {
     width: 7.5%;
     margin-right: 3px;
     margin-bottom: 3px;
+  }
+  .about_wrapper .about_under .about_under_p {
+    font-size: 20px;
+  }
+  .about_wrapper .pc_only {
+    display: none;
   }
   .how_to_circle {
     display: inline-block;
@@ -416,6 +470,7 @@ section {
   }
   .how_to_wrapper {
     padding-bottom: 130px;
+    margin: 0 auto;
   }
   .how_to_wrapper .section_ttl {
     font-family: "Oswald", sans-serif;
@@ -445,7 +500,8 @@ section {
     line-height: 28px;
     margin-top: 5px;
   }
-  .how_to_wrapper .how_to_img_content .button, .how_to_wrapper .how_to_img_content .how_to_downroad_wrap {
+  .how_to_wrapper .how_to_img_content .button,
+  .how_to_wrapper .how_to_img_content .how_to_downroad_wrap {
     margin: 10px 40px 40px;
   }
   .how_to_wrapper .how_to_img_content .how_to_downroad {
@@ -617,4 +673,4 @@ section {
     font-weight: 400;
     line-height: 18px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_sp.css.map */

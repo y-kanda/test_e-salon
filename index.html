@@ -1,350 +1,486 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="sanitize.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section class="pv">
-            <div class="pv_text">
-                <p class="pv_text_heading">「新しい⾃分を⾒つけてくれた」<br>と約6割の⽅が実感!</p>
-                <p class="pv_text_p">パーソナルスタイリングサービスの詳細は<a src="#">こちら</a>。</p>
-            </div>
-            <div class="pv_img">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="style_sp.css">
+    <link rel="stylesheet" href="style_pc.css">
+</head>
+
+<body>
+    <section class="pv">
+        <div class="pv_text">
+            <p class="pv_text_heading">「新しい⾃分を⾒つけてくれた」<br class="sp_only">と約6割の⽅が実感！</p>
+            <p class="pv_text_p">パーソナルスタイリングサービスの詳細は<a src="#">こちら</a>。</p>
+        </div>
+        <!-- ③ハンバーガーボタン -->
+        <div class="burger_wrap" data-aos="fade" data-aos-anchor-placement="top-center" data-aos-offset="300">
+            <button class="burger-btn">
+                <span class="bar bar_top"></span>
+                <span class="bar bar_mid"></span>
+                <span class="bar bar_bottom"></span>
+            </button>
+        </div>
+
+        <div class="pv_img" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="pv_img_pc">
                 <img class="pv_img_base" src="img\mv_sp.jpg" alt="">
-                <img class="pv_img_logo" src="img\logo_e_salon01.svg" alt="" >
-                <!-- あの店この店、まとめて試着。 -->
+                <img class="pv_img_logo" src="img\logo_e_salon01.svg" alt="あの店この店、まとめて試着。">
+                <img src="img\mv_pc.jpg" alt="" class="pv_pcImg">
+                <div class="pv_img_inner">
+                    <img src="img\mv_text_pc.png" alt="" class="pv_pcText" data-aos="fade" data-aos-delay="800"
+                        data-aos-duration="5000">
+                </div>
             </div>
-        </section>
-        <div class="button">
-            <button class="app_download">専用アプリダウンロード<img src="img\icon_another_window.svg" alt="" class="downroad_img">
-                <br><span>（無料）</span></button>
         </div>
 
         <!-- nav -->
         <div class="nav">
+            <div class="nav_wrapper">
+                <div class="sp_backimg sp_nav_logo"></div>
                 <ul class="nav_ul">
-                    <li class="nav_list">E SALON -SHARE BOUTIQUE- ロゴマーク</li>
+                    <li class="nav_list backimg nav_logo"></li>
                     <li class="nav_list">E SALONってなに？</li>
                     <li class="nav_list">ご利⽤の流れ</li>
                     <li class="nav_list">ご試着可能ブランド</li>
-                    <li class="nav_list">Instagram</li>
-                    <li class="nav_list">専用アプリ  ダウンロード（無料）</li>                
-            </ul>
+                    <li class="nav_list nav_sp_Instagram">Instagram<img src="img\icon_another_window.svg" alt=""
+                            class="downroad_img"></li>
+                    <li class="nav_list nav_pc_Instagram">
+                        <img class="nav_list Instagram_logo" src="img\logo_instagram01.svg">
+                    </li>
+                    <li class="nav_list pc_button_wrap">
+                        <button class="pc_button">
+                            専用アプリ ダウンロード<img src="img\icon_another_window.svg" alt="" class="downroad_img">
+                            <br>（無料）
+                        </button>
+                    </li>
+                </ul>
+                <div class="burger_button_wrap">
+                    <button class="burger_inner_button">
+                        専用アプリ ダウンロード<img src="img\icon_another_window.svg" alt="" class="downroad_img">
+                        <br>（無料）
+                    </button>
+                </div>
+            </div>
         </div>
         <!-- nav終わり -->
-        <!-- salon -->
-        <section class="salon_catch section_common">
-            <div class="commun_wrapper salon_wrapper">
-                    <div class="salon_head">
-                        <p class="head_p1">あの店 この店、まとめて試着。<br><br></p>    
-                        <p class="head_p2">ルクアの店舗横断<br>フィッティングショップ<br><br></p>
-                        <hr class="octogun octogun1">
-                        <p class="head_main">E SALON<br><br></p>
-                        <p class="head_mainUnder_p1">ルクア イーレ 5F<br></p>
-                        <hr class="octogun octogun2">
-                        <p class="head_mainUnder_p2">お買い物革命！</p>
-                    
-                </div>
-                <div class="salon_text">
-                    <p class="salon_text_head">
-                    試着室では、<br>思い切りわがままになりたい。<br><br></p>
-                    <p class="salon_text_content1">
-                    大胆に冒険したり、念入りに見比べたり。<br>
-                    誰かの目に遠慮せず、<br>「試してみたい」と思う気持ちに、<br>
-                    もっと気軽に、もっと素直に向き合えますように。<br><br></p>
-                    <p class="salon_text_content2">
-                    あたらしい自分と出会うための、<br>「試着」という大切な行為を一歩前に。<br>
-                    ルクアの店舗横断フィッティングショップ<br>
-                    “E SALON”、オープン。
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- salon終わり -->
 
-        <!-- fitting -->
-        <section class="fitting section_common">
-            <div class="section_circle fitting_circle"></div>
-            <div class="fitting_wrapper">
-                    <h1 class="fitting_head">新しい試着のカタチ。</h1>
-                    <ul class="fitting_content">
-                        <li class="fitting_fukidasi">
-                            <p class="fukidasi_text">
-                                ⽩のパンツが欲しいけど、コーディネートが難しそう。
-                                ⾊々なブランドから、しっくりくるトップスを⾒つけたい。(※)
-                                <div class="fukidasi_textSet">
-                                <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
-                            </div>
-                            </p>
-                            
-                            <div class="fukidasi_img_wrap">
-                                <img src="img\katachi_illust_point01.png" alt="コーディネートのイラスト" class="fukidasi_img">
-                            </div>
-                            <div class="fitting_under_wrap">
-                            <p class="fitting_underText">
+    </section>
+    <div class="button sp_button" data-aos="fade">
+        <button class="app_download">専用アプリダウンロード<img src="img\icon_another_window.svg" alt="" class="downroad_img">
+            <br><span>（無料）</span></button>
+    </div>
+
+
+    <!-- salon -->
+    <section class="salon_catch section_common">
+        <div class="commun_wrapper salon_wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <div class="salon_head">
+                <p class="head_p1">あの店 この店、まとめて試着。<br><br></p>
+                <div class="octogun octogun1"></div>
+                <div class="octogun octogun2"></div>
+                <div class="octogun octogun5 pc_only"></div>
+                <div class="octogun octogun6 pc_only"></div>
+                <p class="head_p2">ルクアの店舗横断<br>フィッティングショップ<br><br></p>
+                <p class="head_main">E SALON<br><br></p>
+                <p class="head_mainUnder_p1">ルクア イーレ 5F<br></p>
+                <p class="head_mainUnder_p2">お買い物革命！</p>
+                <div class="octogun octogun3"></div>
+                <div class="octogun octogun4"></div>
+            </div>
+            <div class="salon_text">
+                <p class="salon_text_head" data-aos="fade-up" data-aos-duration="1000">
+                    試着室では、<br class="sp_only">思い切りわがままになりたい。<br><br></p>
+                <p class="salon_text_content1" data-aos="fade-up" data-aos-duration="1000">
+                    大胆に冒険したり、念入りに見比べたり。<br>
+                    誰かの目に遠慮せず、<br class="sp_only">「試してみたい」と思う気持ちに、<br>
+                    もっと気軽に、もっと素直に向き合えますように。<br><br></p>
+                <p class="salon_text_content2" data-aos="fade-up" data-aos-duration="1000">
+                    あたらしい自分と出会うための、<br class="sp_only">「試着」という大切な行為を一歩前に。<br>
+                    ルクアの店舗横断フィッティングショップ<br class="sp_only">
+                    “E SALON”、オープン。
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- salon終わり -->
+
+    <!-- fitting -->
+    <section class="fitting section_common">
+        <div class="section_circle fitting_circle"></div>
+        <div class="fitting_wrapper">
+            <h1 class="fitting_head" data-aos="fade-up" data-aos-duration="1000">新しい試着のカタチ。</h1>
+            <ul class="fitting_content">
+                <li class="fitting_fukidasi" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="fukidasi_text_wrap">
+                        <p class="fukidasi_text">
+                            ⽩のパンツが欲しいけど、コーディネートが難しそう。
+                            ⾊々なブランドから、しっくりくるトップスを⾒つけたい。(※)
+                    </div>
+                    <div class="fukidasi_textSet">
+                        <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
+                    </div>
+                    </p>
+
+                    <div class="fukidasi_img_wrap">
+                        <img src="img\katachi_illust_point01.png" alt="コーディネートのイラスト" class="fukidasi_img">
+                    </div>
+                    <div class="fitting_under_wrap">
+                        <p class="fitting_underText">
                             違うブランドの商品を<br>
                             組み合わせてコーディネート<br>できる！</p>
-                            </div>
-                        </li>
-                        <li class="fitting_fukidasi">
-                            <p class="fukidasi_text">
-                                ⼦連れでも、⾊々なお店の服を試着してみたい。
-                                </p>
-                            <div class="fukidasi_textSet">
-                                <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
-                            </div>
-                            <div class="fukidasi_img_wrap">
-                            <img src="img\katachi_illust_point02.png" alt="試着するイラスト" class="fukidasi_img">
-                            </div>
-                            <div class="fitting_under_wrap">
-                                <p class="fitting_underText">
-                                家族や友人と一緒に<br>
-                                試着できる！</p>
-                            </div>
-                        </li>
-                        <li class="fitting_fukidasi">
-                            <p class="fukidasi_text">
-                                もうすぐ友だちの結婚式。
-                                ⾊んなお店のドレスを⼀気に試着してみたい。(※)
-                            </p>
-                            <div class="fukidasi_textSet">
-                                <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
-                            </div>
-                            <div class="fukidasi_img_wrap">
-                            <img src="img\katachi_illust_point03.png" alt="ブランドのアイテムを着比べるイラスト" class="fukidasi_img">
-                            </div>
-                            <div class="fitting_under_wrap">
-                                <p class="fitting_underText">
-                                色々なブランドのアイテムを<br>
-                                一気に着比べられる！</p>
-                            </div>
-                        </li>
-                        <li class="fitting_fukidasi">
-                            <p class="fukidasi_text">
-                                すき間時間にアプリで⾒つけた気になる洋服を、まとめて試着してみたい。
-                            </p>
-                            <div class="fukidasi_textSet">
-                                <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
-                            </div>
-                            <div class="fukidasi_img_wrap">
-                            <img src="img\katachi_illust_point04.png" alt="アプリで気になる洋服を見つけるイラスト" class="fukidasi_img">
-                            </div>
-                            <div class="fitting_under_wrap">
-                                <p class="fitting_underText">
-                                アプリで⾒つけた<br>
-                                気になるアイテムを、<br>
-                                そのまま試着できる！</p>
-                            </div>
-                        </li>
-                        <small>
-                        ※イーサロン利用シーンの一例です。<br>
-                        時期により品揃えが変動いたします。</small>
-                    </ul>    
-            </div>
-        </section>
-        <!-- fitting終わり -->
-
-        <!-- about -->
-        <section class="about section_common">
-            <div class="section_circle about_circle"></div>
-            <div class="about_wrapper">
-                <div class="about_top">
-                    <h1 class="section_ttl">WHAT IS “E SALON”?</h1>
-                    <p class="ttl_text">E SALONってなに？</p>
-                </div>
-                    <div class="about_head">試着を、もっと⾃由に、気兼ねなく。</div>
-                    <div class="about_text">
-                        <p class="about_p">
-                        E SALON（イーサロン）は、ブランドの垣根を越えたプライベートフィッティングサービスです。<br>
-                        専用アプリ（無料）でルクア大阪に入っているブランドのアイテムから好きな物をピックアップ。<br>
-                        あとは受付していただいた時間に専用フィッティングルームまでお越しいただくだけ。利用料はかかりません。<br>
-                        選んだアイテムをルーム内にご用意のうえ、お待ちしております。
-                        ブランドの垣根を越え、自由にフィッティングをお楽しみください。
+                    </div>
+                </li>
+                <li class="fitting_fukidasi" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="fukidasi_text_wrap">
+                        <p class="fukidasi_text">
+                            ⼦連れでも、⾊々なお店の服を試着してみたい。
                         </p>
                     </div>
-                    <div class="about_contents">
-                        <ul class="contents_li">
-                            <li class="contents_img">
-                                <div class="content_img_wrap">
-                                    <img src="img\what_slider_img01.jpg" alt="" class="about_img">
-                                </div>
-                                <p class="contents_text">
-                                色々なショップにある気になるアイテムを、<br>
-                                まとめて試着することができます。</p>
-                            </li>
-                            <li class="contents_img">
-                                <div class="content_img_wrap">
-                                    <img src="img\what_slider_img02.jpg" alt="" class="about_img">
-                                </div>
-                                <p class="contents_text">
-                                1名様～4名様用のルームを完備。<br>
-                                完全プライベート空間で、家族と、友人と、<br>
-                                試着をお楽しみいただけます。<br>
-                                利用料はかかりません。</p>
-                            </li>
-                            <li class="contents_img">
-                                <div class="content_img_wrap">
-                                    <img src="img\what_slider_img03.jpg" alt="" class="about_img">
-                                </div>
-                                <p class="contents_text">
-                                オンラインでしか買えなかったブランドが<br>
-                                期間限定で登場するゾーンも併設。</p>
-                            </li>
-                            <li class="contents_img">
-                                <div class="content_img_wrap">
-                                    <img src="img\what_slider_img04.jpg" alt="" class="about_img">
-                                </div>
-                                <p class="contents_text">
-                                試着後に気に入った商品は、E SALON内で<br>
-                                ご購入いただけます。</p>
-                            </li>
-                        </ul>
+                    <div class="fukidasi_textSet">
+                        <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
                     </div>
-                    <div class="about_under">
-                        <img src="img\icon_point.svg" alt="ポイントマーク" class="about_point">
-                        <p class="about_under_p">ルクアのポイントも貯まります。</p>
+                    <div class="fukidasi_img_wrap">
+                        <img src="img\katachi_illust_point02.png" alt="試着するイラスト" class="fukidasi_img">
                     </div>
-                </div>
+                    <div class="fitting_under_wrap">
+                        <p class="fitting_underText">
+                            家族や友人と一緒に<br>
+                            試着できる！</p>
+                    </div>
+                </li>
+                <li class="fitting_fukidasi" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="fukidasi_text_wrap">
+                        <p class="fukidasi_text">
+                            もうすぐ友だちの結婚式。
+                            ⾊んなお店のドレスを⼀気に試着してみたい。(※)
+                        </p>
+                    </div>
+                    <div class="fukidasi_textSet">
+                        <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
+                    </div>
+                    <div class="fukidasi_img_wrap">
+                        <img src="img\katachi_illust_point03.png" alt="ブランドのアイテムを着比べるイラスト" class="fukidasi_img">
+                    </div>
+                    <div class="fitting_under_wrap">
+                        <p class="fitting_underText">
+                            色々なブランドのアイテムを<br>
+                            一気に着比べられる！</p>
+                    </div>
+                </li>
+                <li class="fitting_fukidasi" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="fukidasi_text_wrap">
+                        <p class="fukidasi_text">
+                            すき間時間にアプリで⾒つけた気になる洋服を、まとめて試着してみたい。
+                        </p>
+                    </div>
+                    <div class="fukidasi_textSet">
+                        <img src="img\comment_fukidashi.svg" alt="" class="fukidasi">
+                    </div>
+                    <div class="fukidasi_img_wrap">
+                        <img src="img\katachi_illust_point04.png" alt="アプリで気になる洋服を見つけるイラスト" class="fukidasi_img">
+                    </div>
+                    <div class="fitting_under_wrap">
+                        <p class="fitting_underText">
+                            アプリで⾒つけた<br>
+                            気になるアイテムを、<br>
+                            そのまま試着できる！
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <small>
+                ※イーサロン利用シーンの一例です。<br class="sp_only">
+                時期により品揃えが変動いたします。</small>
+
+        </div>
+    </section>
+    <!-- fitting終わり -->
+
+    <!-- about -->
+    <section class="about section_common">
+        <div class="section_circle about_circle"></div>
+        <div class="about_wrapper">
+            <div class="about_top" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="section_ttl">WHAT IS “E SALON”?</h1>
+                <p class="ttl_text">E SALONってなに？</p>
             </div>
-        </section>
-        <!-- about終わり -->
-        
-        <!-- HOW TO -->
-        <section class="how_to section_common">
-        <div class="section_circle how_to_circle"></div>
-            <div class="how_to_wrapper">
-                <div class="how_to_head">
-                    <h1 class="section_ttl">HOW TO USE</h1>
-                    <p class="how_to_head_p">ご利⽤の流れ</p>
-                </div>
-                <div class="how_to_contents">
-                    <ul class="how_to_li">
-                        <li class="how_to_img_content">
-                            <p class="how_to_img_heading">STEP1</p>
-                            <div class="how_to_img_wrap">
-                                <img src="img\howto_illust_step01_01.png" alt="アプリDLのイラスト" class="how_to_img">
-                            </div>
-                            <div class="how_to_contents_text">
-                                <p class="how_to_contents_head">
-                                    E SALONアプリをダウンロード
-                                </p>
-                                <p class="how_to_contens_p">
-                                    1万点以上のアイテム掲載!<br>
-                                    E SALON専⽤アプリをダウンロード!<br>（無料）
-                                </p>
-                            </div>
-                            <div class="button how_to_downroad_wrap">
-                                    <button class="app_download how_to_downroad">
-                                        ダウンロード<img src="img\icon_another_window.svg" alt="" class="downroad_img">
-                                    </button>
-                            </div>
-                        </li>
-                        <li class="how_to_img_content">
-                            <p class="how_to_img_heading">STEP2</p>
-                            <div class="how_to_img_wrap">
-                                <img src="img\howto_illust_step01_02.png" alt="アイテムをセレクトしているイラスト" class="how_to_img">
-                            </div>
-                            <div class="how_to_contents_text">
-                                <p class="how_to_contents_head">
-                                    お気に⼊り登録
-                                </p>
-                                <p class="how_to_contens_p">
-                                    お好きな時間にアプリをチェック。<br>
-                                    気になる商品は「ワードローブに追加」をクリック。
+            <div class="about_head" data-aos="fade-up" data-aos-duration="1000">
+                試着を、もっと⾃由に、気兼ねなく。
+            </div>
+            <div class="about_text">
+                <p class="about_p" data-aos="fade-up" data-aos-duration="1000">
+                    E SALON（イーサロン）は、ブランドの垣根を越えたプライベートフィッティングサービスです。<br>
+                    専用アプリ（無料）でルクア大阪に入っているブランドのアイテムから好きな物をピックアップ。<br>
+                    あとは受付していただいた時間に専用フィッティングルームまでお越しいただくだけ。利用料はかかりません。<br>
+                    選んだアイテムをルーム内にご用意のうえ、お待ちしております。<br>
+                    ブランドの垣根を越え、自由にフィッティングをお楽しみください。
+                </p>
+            </div>
+            <!-- swiperのwidth設定 -->
+            <div class="about_contents swiper" data-aos="fade-up" data-aos-duration="1000">
+                <div class="swiper-container">
+                    <ul class="contents_li swiper-wrapper">
+                        <li class="contents_img swiper-slide">
+                            <div class="content_img_wrap">
+                                <img src="img\what_slider_img01.jpg" alt="" class="about_img">
+                                <p class="contents_text">
+                                    色々なショップにある気になるアイテムを、<br class="sp_only">
+                                    まとめて試着することができます。
                                 </p>
                             </div>
                         </li>
-                        <li class="how_to_img_content">
-                            <p class="how_to_img_heading">STEP3</p>
-                            <div class="how_to_img_wrap">
-                                <img src="img\howto_illust_step01_03.png" alt="店頭で試着受付" class="how_to_img">
-                            </div>
-                            <div class="how_to_contents_text">
-                                <p class="how_to_contents_head">
-                                    試着受付
-                                </p>
-                                <p class="how_to_contens_p">
-                                    店頭またはアプリで試着受付！<br>
-                                    利用料は無料！
+                        <li class="contents_img swiper-slide">
+                            <div class="content_img_wrap">
+                                <img src="img\what_slider_img02.jpg" alt="" class="about_img">
+                                <p class="contents_text">
+                                    1名様～4名様用のルームを完備。<br class="sp_only">
+                                    完全プライベート空間で、家族と、友人と、<br class="sp_only">
+                                    試着をお楽しみいただけます。<br>
+                                    利用料はかかりません。
                                 </p>
                             </div>
                         </li>
-                        <li class="how_to_img_content">
-                            <p class="how_to_img_heading">STEP4</p>
-                            <div class="how_to_img_wrap">
-                                <img src="img\howto_illust_step01_04.png" alt="試着・購入" class="how_to_img">
-                            </div>
-                            <div class="how_to_contents_text">
-                                <p class="how_to_contents_head">
-                                    試着・購入
+                        <li class="contents_img swiper-slide">
+                            <div class="content_img_wrap">
+                                <img src="img\what_slider_img03.jpg" alt="" class="about_img">
+                                <p class="contents_text">
+                                    オンラインでしか買えなかったブランドが<br class="sp_only">
+                                    期間限定で登場するゾーンも併設。
                                 </p>
-                                <p class="how_to_contens_p">    
-                                    受付時間がくれば、自由に試着して、<br>
-                                    気に入った商品はその場で購入！
+                            </div>
+                        </li>
+                        <li class="contents_img swiper-slide">
+                            <div class="content_img_wrap">
+                                <img src="img\what_slider_img04.jpg" alt="" class="about_img">
+                                <p class="contents_text">
+                                    試着後に気に入った商品は、E SALON内で<br class="sp_only">
+                                    ご購入いただけます。
                                 </p>
                             </div>
                         </li>
                     </ul>
+                    <!-- pagination -->
+                    <div class="swiper-pagination pc_only"></div>
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-next pc_only"></div>
+                    <div class="swiper-button-prev pc_only"></div>
                 </div>
-                <!-- ここから -->
-                <div class="how_to_styling_wrap">
+            </div>
+            <div class="about_under">
+                <div class="about_under_inner">
+                    <img src="img\icon_point.svg" alt="ポイントマーク" class="about_point">
+                    <p class="about_under_p">ルクアのポイントも貯まります。</p>
+                </div>
+            </div>
+            <div class="about_under_line pc_only"></div>
+        </div>
+        </div>
+    </section>
+    <!-- about終わり -->
+
+    <!-- HOW TO -->
+    <section class="how_to section_common">
+        <div class="section_circle how_to_circle"></div>
+        <div class="how_to_wrapper">
+            <div class="how_to_head" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="section_ttl">HOW TO USE</h1>
+                <p class="head_p how_to_head_p">ご利⽤の流れ</p>
+            </div>
+            <div class="how_to_contents" data-aos="fade-up" data-aos-duration="1000">
+                <ul class="how_to_li">
+                    <li class="how_to_img_content">
+                        <p class="how_to_img_heading">STEP1</p>
+                        <div class="how_to_img_wrap">
+                            <img src="img\howto_illust_step01_01.png" alt="アプリDLのイラスト" class="how_to_img">
+                        </div>
+                        <div class="how_to_contents_text">
+                            <p class="how_to_contents_head">
+                                E SALONアプリをダウンロード
+                            </p>
+                            <p class="how_to_contens_p">
+                                1万点以上のアイテム掲載!<br>
+                                E SALON専⽤アプリをダウンロード!<br class="sp_only">（無料）
+                            </p>
+                        </div>
+                        <div class="button how_to_downroad_wrap">
+                            <button class="app_download how_to_downroad">
+                                ダウンロード<img src="img\icon_another_window.svg" alt="" class="downroad_img">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="how_to_img_content">
+                        <p class="how_to_img_heading">STEP2</p>
+                        <div class="how_to_img_wrap">
+                            <img src="img\howto_illust_step01_02.png" alt="アイテムをセレクトしているイラスト" class="how_to_img">
+                        </div>
+                        <div class="how_to_contents_text">
+                            <p class="how_to_contents_head">
+                                お気に⼊り登録
+                            </p>
+                            <p class="how_to_contens_p">
+                                お好きな時間にアプリをチェック。<br class="sp_only">
+                                気になる商品は「ワードローブに追加」をクリック。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="how_to_img_content">
+                        <p class="how_to_img_heading">STEP3</p>
+                        <div class="how_to_img_wrap">
+                            <img src="img\howto_illust_step01_03.png" alt="店頭で試着受付" class="how_to_img">
+                        </div>
+                        <div class="how_to_contents_text">
+                            <p class="how_to_contents_head">
+                                試着受付
+                            </p>
+                            <p class="how_to_contens_p">
+                                店頭またはアプリで試着受付！<br>
+                                利用料は無料！
+                            </p>
+                        </div>
+                    </li>
+                    <li class="how_to_img_content">
+                        <p class="how_to_img_heading">STEP4</p>
+                        <div class="how_to_img_wrap">
+                            <img src="img\howto_illust_step01_04.png" alt="試着・購入" class="how_to_img">
+                        </div>
+                        <div class="how_to_contents_text">
+                            <p class="how_to_contents_head">
+                                試着・購入
+                            </p>
+                            <p class="how_to_contens_p">
+                                受付時間がくれば、自由に試着して、<br class="sp_only">
+                                気に入った商品はその場で購入！
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="how_to_styling_wrap">
+                <div class="how_to_inner" data-aos="fade-up" data-aos-duration="1000">
                     <div class="styling_head">
-                        <h1 class="section_ttl styling_h1">PERSONAL<br> STYLING SERVICE</h1>
-                        <p class="styling_head_p">パーソナル<br>スタイリングサービス</p>
+                        <h1 class="section_ttl styling_h1">PERSONAL<br class="sp_only"> STYLING SERVICE</h1>
+                        <p class="styling_head_p">パーソナル<br class="sp_only">スタイリングサービス</p>
                     </div>
+                    <div class="styling_contents_wrap">
                         <div class="styling_img_wrap">
                             <img src="img\personal_illust_01.png" alt="" class="stylig_img">
                         </div>
                         <div class="styling_inner_text">
-                            経験豊富なE SALON認定パーソナルスタイリストが、
-                            あなたの服選びのお好みやお悩みをお伺いして、
-                            ルクア大阪館内の約40店舗のアイテムからあなたに似合う新たなお洋服を事前にご⽤意します。
+                            <p class="styling_text">
+                                経験豊富なE SALON認定パーソナルスタイリストが、
+                                あなたの服選びのお好みやお悩みをお伺いして、
+                                ルクア大阪館内の約40店舗のアイテムからあなたに似合う新たなお洋服を事前にご⽤意します。
+
+                            </p>
                             <div class="button styling_inner_button">
                                 <button class="app_download styling_button">
                                     予約・詳細はこちら<img src="img\icon_another_window.svg" alt="" class="downroad_img">
                                 </button>
                             </div>
                         </div>
+                    </div>
+                    <small class="styling_comment">
                         ※「パーソナルスタイリングサービス」は別途サービス利用料が必要です。
+                    </small>
                 </div>
             </div>
-        </section> 
-        <!-- HOW TO 終わり -->
+        </div>
+    </section>
+    <!-- HOW TO 終わり -->
 
-        <!-- brands -->
-        <section class="brands_about section_common">
-        BRANDS
-        ご試着可能ブランド
-        取扱商品 約40店舗
-        10,000点以上!
-        全てのご試着可能ブランドを⾒る
-        
-        ※ご試着可能ブランドは予告なく変更させていただく場合があります。
-        
-        最新情報はこちら
-        </section>
-        <!-- brands終わり -->
+    <!-- brands -->
+    <section class="brands_about section_common">
+        <div class="brands_wrapper">
+            <div class="brands_inner">
+                <div class="brands_head_wrap" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="section_ttl brands_ttl">BRANDS</h1>
+                    <p class="how_to_head_p head_p">ご試着可能ブランド</p>
+                </div>
+                <div class="brands_main_wrapper" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="brands_main_text">取扱商品 約40店舗</p>
+                    <p class="brands_main">10,000<span class="brands_main_unit">点以上 !</span></p>
+                    <div class="brands_main_border"></div>
+                </div>
+                <div class="button brands_inner_button" data-aos="fade-up" data-aos-duration="1000">
+                    <button class="app_download brands_button">
+                        全てのご試着可能ブランドを⾒る<img src="img\icon_another_window.svg" alt="" class="downroad_img">
+                    </button>
+                </div>
+                <div class="brands_comment" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="brands_comment_p">
+                        ※ご試着可能ブランドは予告なく変更させていただく場合があります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- brands終わり -->
 
-        <footer class="footer">
-        専用アプリ ダウンロード
-        
-        （無料）
-        
-        TOP
-        E SALONってなに？
-        ご利⽤の流れ
-        ご試着可能ブランド
-        Instagram
-        
-        会社概要
-        プライバシーポリシー
-        Copyright © JR West Japan Shopping Center Development Company all rights reserved.
-        </footer>
-    </body>
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <div class="footer_inner">
+                <div class="footer_head">
+                    <div class="footer_line footer_line1"></div>
+                    <p class="footer_head_p">最新情報はこちら</p>
+                    <div class="footer_line footer_line2"></div>
+                </div>
+                <div class="sp_backimg"></div>
+                <div class="button footer_inner_button">
+                    <button class="app_download footer_button">
+                        専用アプリ ダウンロード<img src="img\icon_another_window.svg" alt="" class="downroad_img"><br>（無料）
+                    </button>
+                </div>
+                <div class="footer_nav">
+                    <ul class="footer_nav_li">
+                        <li class="footer_nav_content">TOP</li>
+                        <li class="footer_nav_content">E SALONってなに？</li>
+                        <li class="footer_nav_content">ご利⽤の流れ</li>
+                        <li class="footer_nav_content">ご試着可能ブランド</li>
+                        <li class="footer_nav_content">Instagram<img src="img\icon_another_window.svg" alt=""
+                                class="downroad_img"></li>
+                    </ul>
+                </div>
+                <div class="footer_siteMap">
+                    <div class="siteMap_wrap">
+                        <div class="footer_lucua_img">
+                            <img src="img\logo_lucua_osaka01.svg" alt="" class="footer_lucua">
+                        </div>
+                        <div class="siteMap_li">
+                            <li class="siteMap_content">会社概要<img src="img\icon_another_window.svg" alt=""
+                                    class="downroad_img"></li>
+                            </li>
+                            <li class="siteMap_content">プライバシーポリシー<img src="img\icon_another_window.svg" alt=""
+                                    class="downroad_img"></li>
+                            </li>
+                            <!-- <li class="siteMap_content"> -->
+
+                            <!-- </li> -->
+                        </div>
+                        <small class="copyright">
+                            Copyright © JR West Japan Shopping Center Development Company all rights reserved.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="script.js"></script>
+</body>
+
 </html>

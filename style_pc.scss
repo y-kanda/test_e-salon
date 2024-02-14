@@ -1,0 +1,839 @@
+// * {
+// 	outline: 1px solid magenta;
+// }
+
+html {
+  overflow: auto;
+}
+
+body {
+  width: 100%;
+  overflow: hidden;
+  position: static;
+}
+
+
+
+@media all and (min-width: 768px) {
+  .sp_only {
+    display: none;
+  }
+
+  body {
+    max-width: 100%;
+    position: static;
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+
+    .pv {
+      width: 100%;
+
+      .pv_text {
+        background-color: #681216;
+        color: #fff;
+        text-align: center;
+        font-size: 28px;
+        padding: 15px 0;
+        letter-spacing: 1.2px;
+
+        .pv_text_p {
+          font-size: 16px;
+          padding-top: 10px;
+
+          a {
+            border-bottom: solid #fff 1px;
+          }
+        }
+      }
+
+      .pv_img {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .pv_img_pc {
+          width: 100%;
+
+          .pv_pcImg {
+            width: 100%;
+            height: 670px;
+            overflow: hidden;
+            -o-object-fit: cover;
+            object-fit: cover;
+          }
+        }
+
+        .pv_pcText {
+          width: 360px;
+          position: absolute;
+          top: 65vh;
+          left: 20vw;
+          z-index: 2;
+        }
+      }
+    }
+
+    // nav
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+
+      .nav_wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        .backimg,
+        .nav_logo {
+          display: block;
+          -webkit-mask-image: url("img/logo_e_salon01.svg");
+          mask-image: url("img/logo_e_salon01.svg");
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-position: center center;
+          mask-position: center center;
+          -webkit-mask-size: contain;
+          mask-size: contain;
+          width: 150px;
+          height: 100px;
+          // margin: 0 auto;
+          background-color: #681216;
+        }
+
+        .sp_backimg,
+        .sp_nav_logo {
+          display: block;
+          -webkit-mask-image: url("img/logo_e_salon01.svg");
+          mask-image: url("img/logo_e_salon01.svg");
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-position: center center;
+          mask-position: center center;
+          -webkit-mask-size: contain;
+          mask-size: contain;
+          width: 180px;
+          height: 100px;
+          // margin: 0 auto;
+          background-color: #681216;
+        }
+
+        .nav_ul {
+          width: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+
+        .nav_list {
+          line-height: 22px;
+        }
+
+        .nav_logo {
+          display: none;
+        }
+
+        .Instagram_logo {
+          width: 70%;
+        }
+
+        .nav_sp_Instagram {
+          display: none;
+        }
+
+        .pc_button {
+          width: 100%;
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          background: #38d0dd;
+          color: #fff;
+          border: none;
+          line-height: 22px;
+          padding: 7px 15px;
+          border-radius: 40px;
+        }
+
+        .burger_button_wrap {
+          display: none;
+        }
+      }
+    }
+
+    .nav.fixed {
+      position: fixed;
+      /*fixedを設定して固定*/
+      z-index: 999;
+      /*最前面へ*/
+      top: 0;
+      /*位置指定*/
+      left: 0;
+      /*位置指定*/
+      background-color: #fff;
+    }
+
+    .sp_button {
+      display: none;
+    }
+
+    // salon
+    .salon_catch {
+      max-width: 880px;
+      margin: 100px auto;
+      position: static;
+      display: block;
+
+      // 枠線を入れる
+      .salon_head {
+        width: 880px;
+        height: 580px;
+        padding: 80px 0 0;
+        margin-top: 160px;
+      }
+
+      .head_p1 {
+        font-size: 22px;
+        margin-bottom: -20px;
+        position: relative;
+      }
+
+      .head_p2 {
+        font-size: 38px;
+        line-height: 53px;
+        letter-spacing: 1.2px;
+        margin-bottom: -70px;
+      }
+
+      .head_main {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        font-size: 120px;
+        letter-spacing: 5px;
+        margin-bottom: -190px;
+      }
+
+      .octogun {
+        background-color: #d0c5b0;
+        height: 5px;
+        width: 200px;
+      }
+
+      .octogun1 {
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        transform: rotate(-30deg);
+      }
+
+      .octogun2 {
+        position: absolute;
+        top: 50px;
+        right: 70px;
+        transform: rotate(30deg);
+      }
+
+      .octogun3 {
+        position: absolute;
+        left: 60px;
+        transform: rotate(30deg);
+      }
+
+      .octogun4 {
+        position: absolute;
+        right: 60px;
+        transform: rotate(-30deg);
+      }
+
+      .octogun5 {
+        position: absolute;
+        top: 250px;
+        left: -60px;
+        transform: rotate(90deg);
+        width: 150px;
+      }
+
+      .octogun6 {
+        position: absolute;
+        top: 250px;
+        right: -60px;
+        transform: rotate(90deg);
+        width: 150px;
+      }
+
+      .head_mainUnder_p1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .head_mainUnder_p2 {
+        font-size: 40px;
+        line-height: 40px;
+        position: relative;
+      }
+
+      .salon_text {
+        // letter-spacing: 1.2px;
+
+        .salon_text_head {
+          width: 100%;
+          margin: 0 auto -20px;
+          font-size: 38px;
+          line-height: 68px;
+        }
+
+        .salon_text_content1,
+        .salon_text_content2 {
+          font-size: 16px;
+          line-height: 35px;
+        }
+      }
+    }
+
+    // fitting
+    .fitting_wrapper {
+      padding: 90px 0 80px;
+
+      .fitting_head {
+        font-size: 38px;
+        line-height: 68px;
+        padding-bottom: 50px;
+      }
+
+      .fitting_content {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        margin: 0 auto 40px;
+
+        .fitting_fukidasi {
+          width: 23%;
+        }
+
+        .fukidasi_text_wrap {
+          display: flex;
+
+          .fukidasi_text {
+            display: flex;
+            height: 170px;
+            padding: 30px 40px;
+            background-color: #681216;
+            color: #fff;
+            font-size: 17px;
+            line-height: 26px;
+            border-radius: 60px;
+            align-items: center;
+            text-align: start;
+          }
+        }
+
+        .fukidasi_textSet {
+          width: 70%;
+          display: flex;
+          justify-content: end;
+
+          .fukidasi {
+            margin-top: -2px;
+            width: 10%;
+            height: 10%;
+            justify-content: end;
+          }
+        }
+
+        .fukidasi_img_wrap {
+          display: flex;
+        }
+
+        .fukidasi_img {
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto 20px;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+
+        .fitting_underText {
+          font-size: 16px;
+          line-height: 32px;
+        }
+      }
+
+      small {
+        display: inline;
+        font-size: 12px;
+      }
+    }
+
+    .about_wrapper {
+      padding: 90px 0;
+
+      .section_ttl {
+        font-family: "Oswald", sans-serif;
+        font-size: 70px;
+        font-weight: 500;
+      }
+
+      .ttl_text {
+        font-size: 32px;
+      }
+
+      .about_head {
+        font-size: 38px;
+        line-height: 68px;
+        margin: 50px auto;
+      }
+
+      .about_p {
+        font-size: 16px;
+        line-height: 35px;
+        margin-bottom: 60px;
+      }
+
+      .swiper-container {
+        position: relative;
+      }
+
+      .contents_li {
+        margin-bottom: 7px;
+      }
+
+      .about_img {
+        width: 65%;
+      }
+
+      .contents_img {
+        display: block;
+      }
+
+      .contents_text {
+        font-size: 16px;
+        margin: 7px auto 30px;
+      }
+
+      .swiper-pagination {
+        height: 10px;
+        --swiper-theme-color: #fff
+      }
+
+      // swiper.jsで付与されたクラス
+      .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+      }
+
+      // 配置のスタイリングは要確認
+      .swiper-button-prev {
+        position: absolute;
+        left: 10%;
+      }
+
+      .swiper-button-next {
+        position: absolute;
+        right: 10%;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: #fff;
+      }
+
+      .about_under {
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+
+        .about_under_inner {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .about_under_p {
+            font-size: 38px;
+            letter-spacing: 1.3px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .about_under_line {
+        background-color: #681216;
+        height: 3px;
+        width: 630px;
+        margin: 0 auto;
+      }
+    }
+
+    .how_to_wrapper {
+      padding: 90px 0;
+
+      .section_ttl {
+        font-family: "Oswald", sans-serif;
+        font-size: 70px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+      }
+
+      .how_to_head_p {
+        font-size: 32px;
+      }
+
+      .how_to_li {
+        width: 74%;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        margin: 100px auto 40px;
+
+        .how_to_img_content {
+          width: 100%;
+          margin: 0 16px;
+
+          .how_to_img_heading {
+            font-family: "Oswald", sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            color: #d0c5b0;
+            margin-bottom: 20px;
+          }
+
+          .how_to_img_wrap {
+            width: 100%;
+            height: 240px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            margin-bottom: 20px;
+          }
+
+          .how_to_img {
+            width: 100%;
+          }
+
+          .how_to_contents_head {
+            font-size: 28px;
+            line-height: 39px;
+            margin-bottom: 20px;
+          }
+
+          .how_to_contens_p {
+            font-size: 16px;
+            line-height: 32px;
+            text-align: start;
+          }
+
+          .how_to_downroad_wrap {
+            margin-top: 10px;
+          }
+
+          .how_to_downroad {
+            width: 70%;
+            background-color: #dd5038;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            padding: 10px;
+            border-radius: 40px;
+            border: none;
+          }
+        }
+      }
+
+      .how_to_styling_wrap {
+        width: 65%;
+        margin: 100px auto 0;
+        border: #681216 solid 1px;
+        height: 560px;
+
+        .how_to_inner {
+          position: relative;
+          top: -6vh;
+          // padding-bottom: 30px;
+          background-color: #fff;
+          width: 92%;
+          margin: 0 auto;
+
+        }
+
+        .styling_h1 {
+          line-height: 77px;
+          margin-bottom: 30px;
+        }
+
+        .styling_head_p {
+          font-size: 32px;
+          line-height: 47px;
+          font-weight: 500;
+        }
+
+        .styling_contents_wrap {
+          display: flex;
+          width: 95%;
+          margin: -30px auto 30px;
+          height: 400px;
+          justify-content: center;
+
+          .styling_img_wrap {
+            width: 60%;
+
+            .stylig_img {
+              width: 80%;
+            }
+          }
+
+          .styling_inner_text {
+            display: flex;
+            // align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 36%;
+            line-height: 32px;
+            text-align: start;
+
+            .styling_text {
+              display: flex;
+              align-items: flex-end;
+            }
+
+            .styling_inner_button {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              margin-top: 30px;
+
+              .styling_button {
+                background-color: #dd5038;
+                height: 50px;
+                padding: 10px 40px;
+                border-radius: 40px;
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+                line-height: 28px;
+                border: none;
+              }
+
+            }
+          }
+        }
+
+        .styling_comment {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    // brands
+    .brands_wrapper {
+      background-color: #d0c5b0;
+
+      .brands_inner {
+        padding: 100px 0;
+
+
+      }
+
+      .brands_head_wrap {
+        position: relative;
+        top: -20vh;
+
+        .brands_ttl {
+          font-family: 'Oswald', sans-serif;
+          font-size: 70px;
+          font-weight: 500;
+          letter-spacing: 1.4px;
+        }
+
+        .how_to_head_p {
+          font-size: 32px
+        }
+      }
+
+      .brands_main_wrapper {
+        color: #fdfcfb;
+        padding-bottom: 40px;
+        margin-top: -20px;
+
+
+        .brands_main_text {
+          font-size: 38px;
+        }
+
+        .brands_main {
+          width: 38%;
+          margin: 0 auto;
+          padding-bottom: 10px;
+          font-family: 'Oswald', sans-serif;
+          font-size: 120px;
+          line-height: 120px;
+          font-weight: 400;
+          border-bottom: #fdfcfb solid 3px;
+        }
+
+        .brands_main_unit {
+          display: inline-block;
+          font-size: 50px;
+          line-height: 50px;
+          font-weight: 700;
+        }
+
+
+      }
+
+      .brands_inner_button {
+        margin: 70px auto 30px;
+      }
+
+      .brands_button {
+        width: 30%;
+        background-color: #dd5038;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 40px;
+        border: none;
+      }
+
+      .brands_comment_p {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+      }
+    }
+  }
+
+  // footerセクション
+  .footer {
+    background-color: #681216;
+    color: #fff;
+    font-weight: 700;
+
+    .footer_wrapper {
+      width: 100%;
+    }
+
+
+    .footer_inner {
+      width: 80%;
+      margin: 0 auto;
+      padding: 100px 0 40px;
+      position: relative;
+    }
+
+    .footer_head {
+      width: 400px;
+      display: inline-block;
+      position: relative;
+      margin: 0 auto -40px;
+    }
+
+
+    .footer_head_p {
+      width: 50%;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 18px;
+      padding-bottom: 10px;
+    }
+
+    .footer_line {
+      background-color: #ffffff;
+      width: 30px;
+      height: 2px;
+    }
+
+    .footer_line1 {
+      position: absolute;
+      top: 10px;
+      left: 100px;
+      transform: rotate(70deg);
+    }
+
+    .footer_line2 {
+      position: absolute;
+      top: 10px;
+      right: 100px;
+      transform: rotate(-70deg);
+    }
+
+    .sp_backimg {
+      display: block;
+      -webkit-mask-image: url("img/logo_e_salon01.svg");
+      mask-image: url("img/logo_e_salon01.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      width: 230px;
+      height: 150px;
+      margin: -30px auto 0;
+      background-color: #ffffff;
+    }
+  }
+
+  .footer_button {
+    width: 30%;
+    background-color: #dd5038;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    padding: 12px 15px;
+    border-radius: 40px;
+    border: none;
+  }
+
+  .footer_nav {
+    padding: 80px 0;
+  }
+
+  .footer_nav_li {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer_nav_content {
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+
+  .footer_lucua_img {
+    width: 36%;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+  }
+
+  .siteMap_li {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+
+  }
+
+  .siteMap_content {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+
+  .copyright {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
