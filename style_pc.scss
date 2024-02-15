@@ -1,3 +1,4 @@
+// 横スクロール原因発見
 // * {
 // 	outline: 1px solid magenta;
 // }
@@ -56,7 +57,7 @@ body {
 
           .pv_pcImg {
             width: 100%;
-            height: 670px;
+            height: 720px;
             overflow: hidden;
             -o-object-fit: cover;
             object-fit: cover;
@@ -82,9 +83,9 @@ body {
       position: absolute;
 
       .nav_wrapper {
-        width: 80%;
+        width: 90%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin: 0 auto;
 
@@ -304,7 +305,7 @@ body {
       }
 
       .fitting_content {
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
         align-items: start;
@@ -323,8 +324,8 @@ body {
             padding: 30px 40px;
             background-color: #681216;
             color: #fff;
-            font-size: 17px;
-            line-height: 26px;
+            font-size: 98%;
+            // line-height: 26px;
             border-radius: 60px;
             align-items: center;
             text-align: start;
@@ -370,6 +371,7 @@ body {
       }
     }
 
+    // about
     .about_wrapper {
       padding: 90px 0;
 
@@ -470,6 +472,7 @@ body {
       }
     }
 
+    // how_to
     .how_to_wrapper {
       padding: 90px 0;
 
@@ -484,76 +487,84 @@ body {
         font-size: 32px;
       }
 
-      .how_to_li {
-        width: 74%;
-        display: flex;
-        justify-content: space-around;
-        align-items: start;
-        margin: 100px auto 40px;
+      .how_to_contents {
+        width: 100%;
 
-        .how_to_img_content {
+
+        .how_to_li {
+          max-width: 1000px;
           width: 100%;
-          margin: 0 16px;
+          display: flex;
+          justify-content: space-around;
+          align-items: start;
+          margin: 100px auto 40px;
 
-          .how_to_img_heading {
-            font-family: "Oswald", sans-serif;
-            font-weight: 400;
-            font-size: 28px;
-            color: #d0c5b0;
-            margin-bottom: 20px;
-          }
-
-          .how_to_img_wrap {
+          .how_to_img_content {
             width: 100%;
-            height: 240px;
-            -o-object-fit: cover;
-            object-fit: cover;
-            margin-bottom: 20px;
-          }
+            margin: 0 16px;
 
-          .how_to_img {
-            width: 100%;
-          }
+            .how_to_img_heading {
+              font-family: "Oswald", sans-serif;
+              font-weight: 400;
+              font-size: 28px;
+              color: #d0c5b0;
+              margin-bottom: 20px;
+            }
 
-          .how_to_contents_head {
-            font-size: 28px;
-            line-height: 39px;
-            margin-bottom: 20px;
-          }
+            .how_to_img_wrap {
+              width: 100%;
+              height: 240px;
+              -o-object-fit: cover;
+              object-fit: cover;
+              margin-bottom: 20px;
+            }
 
-          .how_to_contens_p {
-            font-size: 16px;
-            line-height: 32px;
-            text-align: start;
-          }
+            .how_to_img {
+              width: 100%;
+            }
 
-          .how_to_downroad_wrap {
-            margin-top: 10px;
-          }
+            .how_to_contents_head {
+              font-size: 28px;
+              line-height: 39px;
+              margin-bottom: 20px;
+            }
 
-          .how_to_downroad {
-            width: 70%;
-            background-color: #dd5038;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 22px;
-            padding: 10px;
-            border-radius: 40px;
-            border: none;
+            .how_to_contens_p {
+              font-size: 16px;
+              line-height: 32px;
+              text-align: start;
+            }
+
+            .how_to_downroad_wrap {
+              margin-top: 10px;
+            }
+
+            .how_to_downroad {
+              width: 170px;
+              background-color: #dd5038;
+              color: #fff;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 22px;
+              padding: 10px;
+              border-radius: 40px;
+              border: none;
+            }
           }
         }
       }
 
       .how_to_styling_wrap {
-        width: 65%;
-        margin: 100px auto 0;
+        max-width: 920px;
+        width: 100%;
+        margin: 120px auto 0;
         border: #681216 solid 1px;
-        height: 560px;
+        max-height: 560px;
+        height: auto;
 
         .how_to_inner {
           position: relative;
-          top: -6vh;
+          top: -50px;
           // padding-bottom: 30px;
           background-color: #fff;
           width: 92%;
@@ -580,7 +591,7 @@ body {
           justify-content: center;
 
           .styling_img_wrap {
-            width: 60%;
+            width: 65%;
 
             .stylig_img {
               width: 80%;
@@ -604,11 +615,12 @@ body {
             .styling_inner_button {
               display: flex;
               justify-content: center;
-              width: 100%;
+              // width: 100%;
               margin-top: 30px;
 
               .styling_button {
                 background-color: #dd5038;
+                width: 280px;
                 height: 50px;
                 padding: 10px 40px;
                 border-radius: 40px;
@@ -641,7 +653,7 @@ body {
 
       .brands_head_wrap {
         position: relative;
-        top: -20vh;
+        top: -155px;
 
         .brands_ttl {
           font-family: 'Oswald', sans-serif;
@@ -666,7 +678,7 @@ body {
         }
 
         .brands_main {
-          width: 38%;
+          width: 500px;
           margin: 0 auto;
           padding-bottom: 10px;
           font-family: 'Oswald', sans-serif;
@@ -691,7 +703,7 @@ body {
       }
 
       .brands_button {
-        width: 30%;
+        width: 360px;
         background-color: #dd5038;
         font-size: 20px;
         line-height: 28px;
@@ -784,7 +796,7 @@ body {
   }
 
   .footer_button {
-    width: 30%;
+    width: 300px;
     background-color: #dd5038;
     color: #ffffff;
     font-size: 20px;

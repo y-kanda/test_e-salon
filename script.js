@@ -40,6 +40,7 @@ const initSwiper = () => {
     mySwiper = new Swiper(".swiper-container", {
         loop: true, //最後に達したら先頭に戻る
         effect: "fade",
+        speed: 1000,
         // effect: "fade",の時は必要
         fadeEffect: {
             crossFade: true

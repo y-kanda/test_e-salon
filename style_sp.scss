@@ -33,6 +33,7 @@ section {
     height: 400px;
     padding: 40px 0 20px;
     margin: 0 auto;
+    // 八角形切り抜き
     // clip-path: polygon(30% 0%, 45% -20%, 100% 25%, 
     // 105% 65%, 70% 100%, 30% 100%, 0% 70%, 0% 25%);
     // overflow: hidden;
@@ -45,6 +46,7 @@ section {
 
 @media all and (max-width: 767px) {
 
+    // 横スクロール発見
     // * {
     //     outline: 1px solid magenta;
     // }
@@ -195,6 +197,7 @@ section {
 
     }
 
+    // navセクション
     .nav {
         visibility: hidden;
         opacity: 0;
@@ -279,7 +282,7 @@ section {
         background-color: #681216;
     }
 
-    /* メニューオープン時 */
+    /* ハンバーガメニューメニューオープン時 */
     .nav.fade {
         visibility: visible;
         opacity: 1;
@@ -830,12 +833,6 @@ section {
             line-height: 18px;
         }
     }
-
-
-
-
-
-
 
 
 }

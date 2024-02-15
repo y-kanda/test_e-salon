@@ -225,7 +225,7 @@ section {
     color: #ffffff;
     background-color: #681216;
   }
-  /* メニューオープン時 */
+  /* ハンバーガメニューメニューオープン時 */
   .nav.fade {
     visibility: visible;
     opacity: 1;
