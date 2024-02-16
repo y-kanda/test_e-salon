@@ -13,7 +13,40 @@ body {
   position: static;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
 
+@media all and (min-width: 768px) and (max-width: 1365px) {
+  .swiper-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+    // next・prev位置固定
+    [class^="swiper-button-"] {
+      width: 25px;
+    }
+
+    // .swiper-button-next {
+    //   position: absolute;
+    //   right: 250px;
+    // }
+  }
+}
+
+@media all and (min-width: 1366px) {
+  .swiper-button-prev {
+    position: absolute;
+    left: 10%;
+  }
+
+  .swiper-button-next {
+    position: absolute;
+    right: 10%;
+  }
+}
 
 @media all and (min-width: 768px) {
   .sp_only {
@@ -406,7 +439,7 @@ body {
       }
 
       .about_img {
-        width: 65%;
+        width: 900px;
       }
 
       .contents_img {
@@ -430,20 +463,7 @@ body {
       }
 
       // 配置のスタイリングは要確認
-      .swiper-button-prev {
-        position: absolute;
-        left: 10%;
-      }
 
-      .swiper-button-next {
-        position: absolute;
-        right: 10%;
-      }
-
-      .swiper-button-prev,
-      .swiper-button-next {
-        color: #fff;
-      }
 
       .about_under {
         display: flex;
