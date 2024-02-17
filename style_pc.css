@@ -15,6 +15,10 @@ body {
 }
 
 @media all and (min-width: 768px) and (max-width: 1365px) {
+  .fukidasi_text {
+    padding: 30px;
+    font-size: 75%;
+  }
   .swiper-container {
     max-width: 900px;
     width: 100%;
@@ -25,6 +29,10 @@ body {
   }
 }
 @media all and (min-width: 1366px) {
+  .fukidasi_text {
+    padding: 30px 40px;
+    font-size: 98%;
+  }
   .swiper-button-prev {
     position: absolute;
     left: 10%;
@@ -61,6 +69,13 @@ body {
   }
   body .pv .pv_text .pv_text_p a {
     border-bottom: solid #fff 1px;
+  }
+  body .pv .downroad_img {
+    width: 15px;
+    height: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
   }
   body .pv .pv_img {
     position: relative;
@@ -290,10 +305,8 @@ body {
   body .fitting_wrapper .fitting_content .fukidasi_text_wrap .fukidasi_text {
     display: flex;
     height: 170px;
-    padding: 30px 40px;
     background-color: #681216;
     color: #fff;
-    font-size: 98%;
     border-radius: 60px;
     align-items: center;
     text-align: start;
@@ -464,13 +477,20 @@ body {
     border-radius: 40px;
     border: none;
   }
+  body .how_to_wrapper .how_to_contents .how_to_li .how_to_img_content .downroad_img {
+    width: 15px;
+    height: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+  }
   body .how_to_wrapper .how_to_styling_wrap {
     max-width: 920px;
     width: 100%;
     margin: 120px auto 0;
     border: #681216 solid 1px;
-    max-height: 560px;
-    height: auto;
+    max-height: 650px;
+    height: 100%;
   }
   body .how_to_wrapper .how_to_styling_wrap .how_to_inner {
     position: relative;
@@ -529,6 +549,13 @@ body {
     font-size: 20px;
     line-height: 28px;
     border: none;
+  }
+  body .how_to_wrapper .how_to_styling_wrap .styling_contents_wrap .styling_inner_text .styling_inner_button .downroad_img {
+    width: 15px;
+    height: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
   }
   body .how_to_wrapper .how_to_styling_wrap .styling_comment {
     margin-top: 30px;
@@ -655,6 +682,13 @@ body {
     height: 150px;
     margin: -30px auto 0;
     background-color: #ffffff;
+  }
+  .downroad_img {
+    width: 15px;
+    height: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
   }
   .footer_button {
     width: 300px;
