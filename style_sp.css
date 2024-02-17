@@ -505,6 +505,7 @@ section {
     margin: 10px 40px 40px;
   }
   .how_to_wrapper .how_to_img_content .how_to_downroad {
+    width: 300px;
     background-color: #dd5038;
     font-size: 14px;
   }
@@ -546,7 +547,7 @@ section {
   }
   .how_to_styling_wrap .styling_button {
     background-color: #dd5038;
-    width: 60%;
+    width: 180px;
     font-size: 14px;
     padding: 10px 0;
   }
@@ -571,7 +572,7 @@ section {
     font-size: 30px;
   }
   .brands_wrapper .brands_main_wrapper .brands_main {
-    width: 78%;
+    width: 390px;
     margin: 0 auto;
     padding-bottom: 10px;
     font-family: "Oswald", sans-serif;
@@ -644,7 +645,7 @@ section {
     transform: rotate(-70deg);
   }
   .footer .footer_button {
-    width: 80%;
+    width: 260px;
     background-color: #dd5038;
     font-size: 14px;
     padding: 12px 15px;
