@@ -95,7 +95,7 @@ body {
   body .pv .pv_img .pv_pcText {
     width: 360px;
     position: absolute;
-    top: 65vh;
+    top: 79%;
     left: 20vw;
     z-index: 2;
   }
