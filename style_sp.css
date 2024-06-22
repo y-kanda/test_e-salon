@@ -674,4 +674,9 @@ section {
     font-weight: 400;
     line-height: 18px;
   }
+}
+@media all and (max-width: 349px) {
+  .pv_text_heading {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style_sp.css.map */

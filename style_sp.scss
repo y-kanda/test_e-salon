@@ -43,7 +43,6 @@ section {
     display: none;
 }
 
-
 @media all and (max-width: 767px) {
 
     // 横スクロール発見
@@ -834,8 +833,12 @@ section {
             line-height: 18px;
         }
     }
+}
 
-
+@media all and (max-width: 349px) {
+    .pv_text_heading {
+        font-size: 20px;
+    }
 }
 
 //   共通で使う部分は入れ子にしない
